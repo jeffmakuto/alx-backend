@@ -1,0 +1,4 @@
+/* Exclude files below */
+
+*-main.py
+__pycache__
