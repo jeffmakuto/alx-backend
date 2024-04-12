@@ -23,9 +23,12 @@ babel = Babel(app)
 def get_locale() -> str:
     """Retrieves the locale for a web page.
 
-    This function determines the appropriate locale for a web page based on the user's preferred languages.
-    It uses the `accept_languages` attribute of the `request` object to get the user's preferred languages,
-    and then matches them against the available languages defined in the `LANGUAGES` configuration variable of the app.
+    This function determines the appropriate locale for a
+    web page based on the user's preferred languages.
+    It uses the `accept_languages` attribute of the `request`
+    object to get the user's preferred languages,
+    and then matches them against the available languages
+    defined in the `LANGUAGES` configuration variable of the app.
 
     Returns:
         str: The locale code for the selected language.
