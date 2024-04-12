@@ -48,14 +48,19 @@ def before_request() -> None:
 def get_locale() -> str:
     """Retrieves the locale for a web page.
     
-    This function retrieves the locale for a web page by checking various sources in a specific order.
-    It first checks the query string parameters for a 'locale' key. If found and it is a valid locale, it returns it.
-    If not found or not a valid locale, it checks the user details stored in the global 'g' object for a 'locale' key.
+    This function retrieves the locale for a web page by
+    checking various sources in a specific order.
+    It first checks the query string parameters for a 'locale'
+    key. If found and it is a valid locale, it returns it.
+    If not found or not a valid locale, it checks the user
+    details stored in the global 'g' object for a 'locale' key.
     If found and it is a valid locale, it returns it.
-    If not found or not a valid locale, it checks the 'locale' header in the request headers.
+    If not found or not a valid locale, it checks the 'locale'
+    header in the request headers.
     If found and it is a valid locale, it returns it.
-    If none of the above conditions are met, it returns the default locale specified in the app configuration.
-    
+    If none of the above conditions are met, it returns
+    the default locale specified in the app configuration.
+
     Returns:
         str: The locale for the web page.
     """
