@@ -47,11 +47,17 @@ def before_request() -> None:
 def get_locale() -> str:
     """Retrieves the locale for a web page.
 
-    This function determines the locale for a web page based on the following priority:
-    1. If the 'locale' parameter is present in the request arguments and is a valid language code, it is used as the locale.
-    2. If the user is authenticated and their preferred locale is a valid language code, it is used as the locale.
-    3. If the 'locale' header is present in the request headers and is a valid language code, it is used as the locale.
-    4. If none of the above conditions are met, the function uses the 'accept_languages' attribute of the request to determine the best match for the available languages configured in the application.
+    This function determines the locale for a web page
+    based on the following priority:
+    1. If the 'locale' parameter is present in the request
+    arguments and is a valid language code, it is used as the locale.
+    2. If the user is authenticated and their preferred locale is a
+    valid language code, it is used as the locale.
+    3. If the 'locale' header is present in the request headers
+    and is a valid language code, it is used as the locale.
+    4. If none of the above conditions are met, the function uses the
+    'accept_languages' attribute of the request to determine the best
+    match for the available languages configured in the application.
 
     Returns:
         str: The locale code for the web page.
