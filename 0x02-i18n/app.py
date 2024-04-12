@@ -47,7 +47,7 @@ def before_request() -> None:
 @babel.localeselector
 def get_locale() -> str:
     """Retrieves the locale for a web page.
-    
+
     This function retrieves the locale for a web page by
     checking various sources in a specific order.
     It first checks the query string parameters for a 'locale'
