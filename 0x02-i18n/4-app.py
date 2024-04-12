@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python3
 """A Basic Flask app with internationalization support.
 """
@@ -24,11 +23,17 @@ babel = Babel(app)
 def get_locale() -> str:
     """Retrieves the locale for a web page.
 
-    This function retrieves the locale for a web page based on the query string parameters or the accept languages header.
-    It first parses the query string parameters and checks if the 'locale' parameter is present and valid.
-    If the 'locale' parameter is valid, it returns the value of the 'locale' parameter.
-    If the 'locale' parameter is not present or not valid, it uses the accept languages header to determine the best match locale.
-    
+    This function retrieves the locale for a
+    web page based on the query string parameters or the
+    accept languages header.
+    It first parses the query string parameters
+    and checks if the 'locale' parameter is present and valid.
+    If the 'locale' parameter is valid, it returns
+    the value of the 'locale' parameter.
+    If the 'locale' parameter is not present or not
+    valid, it uses the accept languages header to determine
+    the best match locale.
+
     Returns:
         str: The locale for the web page.
     """
