@@ -1,0 +1,20 @@
+# Node.js
+node_modules/
+
+# Logs
+*.log
+
+# Dependency lock files
+package-lock.json
+yarn.lock
+
+# Editor/IDE
+.vscode/
+.idea/
+
+# Operating System-specific
+.DS_Store
+Thumbs.db
+
+# Omit specific files
+*-main.js
