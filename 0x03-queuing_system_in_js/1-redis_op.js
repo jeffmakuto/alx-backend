@@ -1,5 +1,5 @@
 #!/usr/bin/yarn dev
-import { createClient } from 'redis';
+import { createClient, print } from 'redis';
 
 const client = createClient();
 
